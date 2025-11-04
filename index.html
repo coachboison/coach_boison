@@ -69,12 +69,24 @@ section{padding:32px 0;border-top:1px solid rgba(7,18,42,0.03)}
 .benefit{display:flex;gap:12px;align-items:flex-start}
 .benefit .dot{width:46px;height:46px;border-radius:10px;background:linear-gradient(180deg,var(--brand),var(--brand-2));color:white;display:flex;align-items:center;justify-content:center;font-weight:800}
 
-/* Testimonials */
-.testimonials{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:6px}
-.t-card{padding:14px;border-radius:12px;background:linear-gradient(180deg,#ffffff,#fbfffb);border:1px solid rgba(0,182,134,0.05);box-shadow:0 6px 18px rgba(2,6,23,0.04)}
-.t-card p{margin:0;color:var(--muted);font-size:15px}
-.t-meta{display:flex;gap:12px;align-items:center;margin-top:12px}
-.t-meta img{width:54px;height:54px;border-radius:10px;object-fit:cover}
+/* Testimonials - MODIFIED FOR LARGER SIZE */
+.testimonials{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:10px}
+.t-card{
+  padding:24px; /* INCREASED PADDING */
+  border-radius:12px;
+  background:linear-gradient(180deg,#ffffff,#fbfffb);
+  border:1px solid rgba(0,182,134,0.05);
+  box-shadow:0 6px 18px rgba(2,6,23,0.04);
+  /* height: auto; - Keeps height flexible but padding makes it larger */
+}
+.t-card p{
+  margin:0;
+  color:var(--muted);
+  font-size:16px; /* SLIGHTLY LARGER TEXT */
+  line-height:1.6;
+}
+.t-meta{display:flex;gap:14px;align-items:center;margin-top:18px} /* INCREASED SPACING */
+.t-meta img{width:60px;height:60px;border-radius:12px;object-fit:cover} /* SLIGHTLY LARGER IMAGES */
 
 /* Footer CTA */
 .footer-cta{padding:22px;border-radius:12px;background:linear-gradient(180deg,#ffffff,#f7fffb);box-shadow:0 12px 30px rgba(2,6,23,0.06)}
@@ -212,7 +224,7 @@ section{padding:32px 0;border-top:1px solid rgba(7,18,42,0.03)}
         <p>“Another sale made 😭😂 Thanks to my coaches ❤ @Coach Boison”</p>
         <div class="t-meta"><img src="testi1.jpg.jpg" alt="testimonial 1"><div><strong>Naomi.</strong><div class="muted">Student</div></div></div>
       </div>
-
+      <div>
       <div class="t-card fade-in">
         <p>“After taking a break, I came back and started earning again! Thank you so much for your tips and encouragement 🙏.”</p>
         <div class="t-meta"><img src="testi2.jpg.jpg" alt="testimonial 2"><div><strong>Aisha K.</strong><div class="muted">Beginner</div></div></div>
@@ -329,6 +341,7 @@ section{padding:32px 0;border-top:1px solid rgba(7,18,42,0.03)}
     }
   </script></body>
 </html>
+
 
 
 

@@ -118,9 +118,44 @@ window.onload = function () {
 <section class="section story">
   <img src="after.jpg.jpg" alt="Coach Boison Picture">
   <div class="text">
+    -------------------------------------------------------------------------------
+    .section.story {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.section.story img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.section.story .text {
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 0 10px;
+}
+
+@media (max-width: 768px) {
+  .section.story {
+    text-align: center;
+    flex-direction: column;
+    ----------------------------------------
+  }
+}
     <h2>My Journey</h2>
-    <p>Not long ago, I struggled to make consistent income online. I tried many methods but nothing worked… until I discovered affiliate marketing. With simple strategies and the right guidance, I earned my first $500 in just 30 days using only my phone.</p>
-    <p>Now I teach others to replicate my success with clear, step-by-step guidance. Whether you’re a beginner or already trying, this system works for anyone willing to take action.</p>
+    <p>Not long ago, I struggled to make consistent income online.
+      I tried many methods but nothing worked… 
+      until I discovered affiliate marketing.
+      With simple strategies and the right guidance,
+      I earned my first $500 in just 30 days using only my phone.</p>
+    <p>Now I teach others to replicate my success with clear,
+      step-by-step guidance. Whether you’re a beginner or already trying, 
+      this system works for anyone willing to take action.</p>
     <p style="font-weight:bold; color:#0056ff;">– Coach Boison</p>
   </div>
 </section>
